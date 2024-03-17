@@ -19,7 +19,7 @@ export type ResponseData<T> = {
 
 export const USER_ROLE  = {
   admin: "admin",
-  guest: "guest",
+  user: "user",
 } as const;
 
 export type TUserRole = keyof typeof USER_ROLE;

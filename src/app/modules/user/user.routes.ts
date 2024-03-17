@@ -22,4 +22,4 @@ userRouter.put(
 
 userRouter.put("/delete-user/:id", auth("admin"), UserControllers.deleteUser);
 
-userRouter.get("/me", auth("admin", "guest"), UserControllers.getMe);
+userRouter.get("/me", auth("admin", "user"), UserControllers.getMe);

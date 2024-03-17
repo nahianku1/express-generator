@@ -25,14 +25,14 @@ export const userSchema = new Schema<TUser>(
     },
     role: {
       type: String,
-      enum: ["admin", "guest"],
-      default: "guest",
+      enum: ["admin", "user"],
+      default: "user",
       required: true,
     },
     status: {
       type: String,
-      enum: ["in-progress", "blocked"],
-      default: "in-progress",
+      enum: ["active", "blocked"],
+      default: "active",
       required: true,
     },
     isDeleted: {
