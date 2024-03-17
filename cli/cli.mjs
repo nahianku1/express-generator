@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 import fs from "fs";
 import path from "path";
-import { capitalizeModuleName } from "../src/app/utils/capitalizeModuleName.mjs";
-import { addRoute } from "../src/app/utils/addRoute.mjs";
-import { isRouteExists } from "../src/app/utils/isRouteExists.mjs";
+import { capitalizeModuleName } from "./utils/capitalizeModuleName.mjs";
+import { addRoute } from "./utils/addRoute.mjs";
+import { isRouteExists } from "./utils/isRouteExists.mjs";
 
 // Define the directory where pages will be created
 const moduleDirectory = path.join(process.cwd(), "src", "app", "modules");
@@ -389,7 +389,7 @@ function createModule(moduleName) {
     );
     `
     );
-    
+
     console.log(`Routes file '${moduleName}.routes.ts' created successfully.`);
 
     if (!isRouteExists(routeDirectory, moduleName)) {

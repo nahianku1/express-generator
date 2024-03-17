@@ -1,5 +1,5 @@
 {
-  "name": "create-express-app",
+  "name": "chat-app-backend",
   "version": "5.0.0",
   "description": "",
   "main": "src/server.ts",
