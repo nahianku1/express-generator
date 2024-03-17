@@ -3,7 +3,7 @@ import app from "./app";
 import config from "./app/config/config";
 import { Server } from "http";
 import { seedAdmin } from "./app/seed/seedAdmin";
-import { seedGuest } from "./app/seed/seedGuest";
+import { seedGuest } from "./app/seed/seedUser";
 
 let server: Server;
 
