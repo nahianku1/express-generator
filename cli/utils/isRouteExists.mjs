@@ -1,6 +1,1 @@
-import fs from "fs";
-
-export const isRouteExists = (path, module) => {
-  const data = fs.readFileSync(path, "utf-8");
-  return data.includes(`${module}Router`);
-};
+import e from"fs";const o=(o,r)=>e.readFileSync(o,"utf-8").includes(`${r}Router`);export{o as isRouteExists};
