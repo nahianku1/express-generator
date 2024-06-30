@@ -1,3 +1,1 @@
-export const capitalizeModuleName = (moduleName) => {
-  return moduleName[0].toUpperCase() + moduleName.slice(1);
-};
+const e=e=>e[0].toUpperCase()+e.slice(1);export{e as capitalizeModuleName};
